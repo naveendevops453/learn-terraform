@@ -8,3 +8,5 @@ variable "fruits" {}
 output "test" {
   value = module.sample.test
 }
+
+#Module can be iterated with loops
