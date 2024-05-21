@@ -15,3 +15,7 @@ variable "components" {
     mysql = { instance_type = "t2.micro" }
   }
 }
+
+#frontend = { instance_type = "t3.micro" }
+#In above input key is frontend value is  instance_type = "t3.micro"
+#since it is called by for_each, each prefix is needed like each.key and each.value.
