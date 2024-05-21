@@ -50,3 +50,8 @@ variable "url" {}
 output "url" {
   value = var.url
 }
+
+#Data in terraform is 3 types
+#1. String - Need Quotes only double quotes, terraform does not support single quotes.
+#2. Number - No Quotes required
+#3. Boolean - No Quotes required.
