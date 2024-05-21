@@ -18,3 +18,7 @@ variable "ami" {
 variable "vpc_security_group_ids" {
   default = ["sg-09384db4af9c97a66"]
 }
+
+variable "zone_id" {
+  default = "Z0530708E6IE8V7KW7XF"
+}
