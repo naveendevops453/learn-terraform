@@ -23,3 +23,15 @@ output "l1" {
 output "l2" {
   value = var.l[1]
 }
+
+#map variable
+variable "m" {
+  default = {
+    course = "Devops"
+    Name = "Naveen"
+  }
+}
+
+output "course_name" {
+  value = var.m["course"]
+}
