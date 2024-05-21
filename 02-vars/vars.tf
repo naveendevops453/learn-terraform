@@ -9,7 +9,7 @@ output "x" {
 variable "l" {
   default = [
   10,
-  hello,
+  "hello",
   true
   ]
 }
