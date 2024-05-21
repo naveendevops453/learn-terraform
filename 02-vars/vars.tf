@@ -22,5 +22,4 @@ output "l1" {
 #accessing second value
 output "l2" {
   value = var.l[1]
-
 }
