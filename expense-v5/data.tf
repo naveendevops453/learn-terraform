@@ -7,7 +7,7 @@ data "aws_route53_zone" "main" {
 #   value = data.aws_route53_zone.main
 # }
 
-data "aws_security_group" "allow-all"{
+data "aws_security_group" "allow-all" {
   filter {
     name   = "group-name"
     values = ["allow-all"]
