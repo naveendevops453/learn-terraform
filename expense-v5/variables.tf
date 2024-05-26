@@ -11,14 +11,14 @@ variable "components" {
   }
 }
 
-variable "ami" {
-  default = "ami-090252cbe067a9e58"
-}
-
-variable "vpc_security_group_ids" {
-  default = ["sg-09384db4af9c97a66"]
-}
-
-variable "zone_id" {
-  default = "Z0992257EC31MTDWCF6V"
-}
+# variable "ami" {
+#   default = "ami-090252cbe067a9e58"
+# }
+#
+# variable "vpc_security_group_ids" {
+#   default = ["sg-09384db4af9c97a66"]
+# }
+#
+# variable "zone_id" {
+#   default = "Z0992257EC31MTDWCF6V"
+# }

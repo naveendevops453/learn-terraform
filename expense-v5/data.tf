@@ -3,13 +3,20 @@ data "aws_route53_zone" "main" {
   private_zone = false
 }
 
-data "aws_security_group" "allow-all" {
+data "aws_security_group" "Allow-all" {
   filter {
     name   = "group-name"
     values = ["Allow-all"]
   }
 }
 
-output "sg" {
-  value = data.aws_security_group.allow-all
+# output "sg" {
+#   value = data.aws_security_group.Allow-all
+# }
+
+data "aws_ami" "ami" {
+  executable_users = ["self"]
+  most_recent      = true
+  name_regex       = "RHEL-9-DevOps-Practice"
+  owners           = ["973714476881"]
 }
